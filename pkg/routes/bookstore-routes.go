@@ -5,6 +5,7 @@ import (
 	"github.com/Tha-prodigy/Go-Bookstore/pkg/controllers"
 )
 
+// assign an anonymous func to a variable
 var RegisterBookStoreRoutes = func(router *mux.Router) {
 	router.HandleFunc("/book/", controllers.CreateBook).Methods("POST")
 	router.HandleFunc("/book/", controllers.GetBook).Methods("GET")
